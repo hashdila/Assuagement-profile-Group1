@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        header, footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            flex-wrap: wrap;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 1;
+        }
+        .image-container {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            margin: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s;
+        }
+        .image-container .name {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 90%;
+        }
+        .image-container .name1 {
+            position: absolute;
+            bottom: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 10px;
+            width: 90%;
+        }
+        .image-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+        .image-container:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .image-container.team-leader {
+            border: 2px solid gold;
+            box-shadow: 0 8px 16px rgba(255, 215, 0, 0.4);
+            transform: scale(1.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .image-container.team-leader:hover {
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.6);
+        }
+        .image-container.team-leader .role {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 215, 0, 0.8);
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 90%;
+            font-weight: bold;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <iframe width="100%" height="100%" 
+        src="https://www.youtube.com/embed/V3-Ex0WOrI8?autoplay=1&mute=1&loop=1&playlist=V3-Ex0WOrI8" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+</iframe>
+
+    </div>
+    <header>
+        <h1>Welcome to GROUP 1</h1>
+    </header>
+    <div class="container">
+        <div class="image-container team-leader" onclick="window.location.href='nisal.html'">
+            <img src="images/nisal.jpeg" alt="Nisal">
+            <div class="name">Nisal Kahagalla</div>
+            <div class="name1">Team Leader</div>
+           
+        </div>
+        <div class="image-container" onclick="window.location.href='dilan.html'">
+            <img src="images/dilan.jpeg" alt="Dilan Nawarathna">
+            <div class="name">Dilan Nawarathna</div>
+        </div>
+        <div class="image-container" onclick="window.location.href='susanth.html'">
+            <img src="images/susanth.jpeg" alt="Image 3">
+            <div class="name">Susant Joshi</div>
+        </div>
+        <div class="image-container" onclick="window.location.href='ramanand.html'">
+            <img src="https://scontent-itm1-1.xx.fbcdn.net/v/t39.30808-6/445234994_3638454099752970_2060592823851124266_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=zFSx_i9zLFMQ7kNvgHlmGiM&_nc_ht=scontent-itm1-1.xx&oh=00_AYBjgBsLDXk2mZITLMZmYCjpZZwH4Rwr7FNmYtgFzMonEQ&oe=668A0B0D" alt="Image 4">
+            <div class="name">Ramanand upadhayay</div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer" style="display: flex; justify-content: center; align-items: center;">
+            <div class="left" style="text-align: center; margin-right: 20px;">
+                <p>&copy; <a href="https://www.kcg.edu/en/school-info" style=" color: aliceblue;"> KCGI</a> Web Programming</p>
+                <p>Group 1</p>
+            </div>
+            <div class="right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.0362624238433!2d135.77677422585532!3d35.030822715428194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001090016a9833d%3A0xf1d9af9cf3797372!2sKCGI%20Headquarters!5e0!3m2!1sen!2sjp!4v1719985372476!5m2!1sen!2sjp"
+                    width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

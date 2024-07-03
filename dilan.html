@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Dilan Nawarathna</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 30px 100px 100px 100px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-info {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .profile-picture {
+            max-width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 15px 50px;
+            margin: 20px;
+            margin-top: 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contact-info h2 {
+            color: #007bff;
+        }
+
+
+        .work-experience,
+        .education,
+        .skills,
+        .projects {
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .left a {
+            color: #000000;
+        }
+
+        .right a {
+            color: #000000;
+        }
+
+        .part1 a {
+            color: #000000;
+        }
+
+        .section-content a {
+            color: #000000;
+
+        }
+
+        .summary-container {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            text-align: justify;
+
+        }
+
+        .summary-container h2 {
+            color: #2c3e50;
+        }
+
+        .summary-container p {
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+
+
+
+        footer {
+            background-color: gray;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- <p>
+        <h1>PROFILE</h1>
+        </p> -->
+        <nav>
+            <ul style="list-style-type: none; padding: 0; display: flex;">
+                <li style="margin-right: 20px;"><a href="#work-experience">Work Experience</a></li>
+                <li style="margin-right: 20px;"><a href="#education">Education</a></li>
+                <li style="margin-right: 20px;"><a href="#skills">Skills</a></li>
+                <li style="margin-right: 20px;"><a href="#projects">Projects</a></li>
+                <li style="margin-right: 20px;"><a href="#personaldata">Target and Me</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="profile-container">
+
+
+        <div class="profile-info">
+
+
+            <div class="tophead" style="display: flex;">
+                <div class="contact-info" style="width: 80%;">
+                    <p style="font-size: 40px;"><strong>Hashendra Dilan Nawarathna</strong></p>
+                    <h2><i>Software Engineer (Web Develipment)</i></h2>
+                    <p style="text-align: justify; ">I am a dedicated software engineer with strong technical
+                        knowledge, proven teamwork skills, and
+                        leadership capabilities. I aim to contribute my expertise to innovative, technology-pushing
+                        software projects. Whether creating new applications, optimizing systems, or solving complex
+                        problems, I am driven to make a meaningful impact. I thrive in collaborative, learning-focused
+                        environments and enjoy working in a dynamic, innovation-driven team.</p>
+
+
+                </div>
+
+                <div class="profile-picture" style="width: 20%;">
+                    <img src="images/dilan.jpeg" alt="Profile Picture">
+                </div>
+            </div>
+            <div class="con-details" style="display: flex;">
+                <div class="left" style="width: 50%;">
+                    <p><strong><i class="fas fa-phone"></i> Phone:</strong> 090 4414 6407</p>
+                    <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a
+                            href="mailto:dilannawa2@gmail.com">dilannawa2@gmail.com</a></p>
+                </div>
+                <div class="right" style="width: 50%;">
+                    <p><strong><i class="fab fa-linkedin"></i> LinkedIn:</strong> <a
+                            href="https://linkedin.com/in/dilan-nawarathna">linkedin.com/in/dilan-nawarathna</a></p>
+                    <p><strong><i class="fas fa-map-marker-alt"></i> Address: postal code 612-0029</strong></p>
+                    <p>
+                    <address>8 Chome-63 Fukakusa Nishiuracho, Fushimi Ward, Kyoto, Japan.</address>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d952.7869821371634!2d135.76120579432688!3d34.95850065903318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010f65f96d41f9%3A0xabdfa0ecbb367edb!2z44CSNjEyLTAwMjkgS3lvdG8sIEZ1c2hpbWkgV2FyZCwgRnVrYWt1c2EgTmlzaGl1cmFjaMWNLCA4LWNoxY1tZeKIku-8lu-8k-KIkjYzIOOCv-ODhOODn-ODpOODnuODs-OCt-ODp-ODsw!5e0!3m2!1sen!2sjp!4v1719814893647!5m2!1sen!2sjp"
+                    width="100%" height="150px" style="border:0; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="work-experience" id="work-experience">
+                <div class="section-title">
+                    <h2>Work Experience</h2>
+                    <hr>
+                </div>
+                <div class="section-content">
+                    <p><i class="fas fa-star"></i><strong><a href="https://techzap.lk/">Techzap Solutions</a> -
+                            Co-Founder / Backend Developer</strong></p>
+                    <p>12/2022 – Present</p>
+                    <ul>
+                        <li>Engineered modern applications with Java, ReactJS, JavaScript, SQL Server, and NoSQL.</li>
+                        <li>Oversaw back-end development using PHP to maintain site integrity, security, and efficiency.
+                        </li>
+                        <li>Designed databases and table structures following architecture methodology for web
+                            applications.</li>
+                    </ul>
+
+                </div>
+                <div class="section-content">
+                    <p><i class="fas fa-star"></i><strong><a href="https://cbllk.com/"> Ceylone Bisuts Limited </a>-
+                            Software Engineer</strong></p>
+                    <p>05/2023 – 04/2024</p>
+                    <ul>
+                        <li>Developed advanced applications utilizing Java, ReactJS, JavaScript, SQL Server, and NoSQL
+                            technologies.</li>
+                        <li>Led back-end development efforts with PHP, ensuring robust site integrity, security, and
+                            operational efficiency.
+                        </li>
+                        <li>Architected and implemented database designs and table structures tailored for web
+                            applications.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="education" id="education">
+                <div class="section-title">
+                    <h2>Education</h2>
+                    <hr>
+                </div>
+                <div class="section-content">
+                    <div class="educations" style="display: flex;  ">
+                        <div class="part1">
+                            <ul>
+                                <li>
+                                    <p><strong>BSc in Computing and Software Engineering</strong><br>
+                                        <a href="https://www.cardiffmet.ac.uk/Pages/default.aspx">Cardiff Metropolitan
+                                            University, UK</a><br>
+                                        Second Upper | Graduation Year: 2023
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="part1">
+                            <ul>
+                                <li>
+                                    <p><strong>HD in Computing and Software Engineering</strong><br>
+                                        <a href="https://www.cardiffmet.ac.uk/Pages/default.aspx">Cardiff Metropolitan
+                                            University, UK</a><br>
+                                        Merit | Graduation Year: 2021-2022
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <ul>
+                        <li>
+                            <p><strong>Advance Level</strong><br>
+                                Pinnawala Central Collage, Sri Lanka<br>
+                            <details>
+                                <summary>Resuls & Subjects</summary>
+                                <table>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Resuls</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Combined Mathematics</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physics</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chemistry</td>
+                                        <td>S</td>
+                                    </tr>
+                                </table>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills" id="skills">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <hr>
+                </div>
+                <div class="section-content"
+                    style="  border-radius: 10px; max-width: 100%; margin: 0 auto; font-family: Arial, sans-serif;">
+
+                    <p style="font-size: 18px; font-weight: bold; margin-bottom: 10px; text-align: center;">
+                        Technical Skills:
+                    </p>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0 0 20px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">Java</li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">PHP</li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">ReactJS
+                        </li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">
+                            JavaScript</li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">Firebase
+                        </li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">MySQL
+                        </li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">R</li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">Android
+                            Development</li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">CSS</li>
+                        <li style="background: #007bff; color: white; padding: 10px 15px; border-radius: 5px;">GitHub
+                        </li>
+                    </ul>
+
+                    <p style="font-size: 18px; font-weight: bold; margin-bottom: 10px; text-align: center;">
+                        Interpersonal Skills:
+                    </p>
+                    <ul
+                        style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                        <li style="background: #28a745; color: white; padding: 10px 15px; border-radius: 5px;">
+                            Presentation</li>
+                        <li style="background: #28a745; color: white; padding: 10px 15px; border-radius: 5px;">
+                            Analytical</li>
+                        <li style="background: #28a745; color: white; padding: 10px 15px; border-radius: 5px;">
+                            Communication</li>
+                        <li style="background: #28a745; color: white; padding: 10px 15px; border-radius: 5px;">Fast
+                            Learning</li>
+                        <li style="background: #28a745; color: white; padding: 10px 15px; border-radius: 5px;">Problem
+                            Solving</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="projects" id="projects">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                    <hr>
+                </div>
+                <ul>
+                    <li>
+                        <div class="section-content" style="color: #555; line-height: 1.6;">
+                            <div style="margin-bottom: 20px;">
+                                <p style="font-size: 20px; font-weight: bold; color: #007bff; margin: 0 0 5px;">Jobs and
+                                    Servicers - Web Application</p>
+                                <p style="font-size: 16px; margin: 0;">Final project of BSc-2023</p>
+                            </div>
+                    </li>
+                    <li>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 20px; font-weight: bold; color: #007bff; margin: 0 0 5px;">Ride Sharers
+                                – Mobile Application</p>
+                            <p style="font-size: 16px; margin: 0;">Final group project of HD-2022</p>
+                            <p style="font-size: 16px; margin: 5px 0;"><strong>Awards:</strong> Merit Award for Ride
+                                Sharers Mobile Application (07/2023)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p style="font-size: 20px; font-weight: bold; color: #007bff; margin: 0 0 5px;">Exito
+                                Exhibition, ICBT Campus</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="personaldata" id="personaldata">
+                <div class="section-title">
+                    <h2>Target and Me</h2>
+                    <hr>
+                </div>
+                <details>
+                    <summary>Read More</summary>
+
+
+
+                    <div class="summary-container">
+                        <h2>About Me</h2>
+                        <p ><strong style="font-size:larger;">Hobbies:</strong> I enjoy playing video games, developing games, and creating
+                            websites. These activities not only entertain me but also enhance my skills in various
+                            aspects of IT.</p>
+                        <p><strong style="font-size:larger;">Target:</strong> My goal is to establish my own IT development company by 2030,
+                            aiming to be the best in the industry.</p>
+                    </div>
+
+                    <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/embed/f0Shc2YFBIk?si=Wh40UW8Y0k6N3O8n&autoplay=1&loop=1&playlist=f0Shc2YFBIk&controls=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                    </iframe>
+
+
+            </div>
+            </details>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+    <div class="back to top">
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </div>
+
+
+
+    </div>
+    <footer>
+
+
+        <p>Contact me: <a href="mailto:dilannawa@gmail.com">dilannawa2@gmail.com</a></p>
+        <p>Find me on: <a href="https://linkedin.com/in/dilan-nawarathna" target="_blank">LinkedIn</a> | <a
+                href="https://github.com/hashdila" target="_blank">GitHub</a></p>
+        <p>&copy; 2024 Hashendra Dilan Nawarathna. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
